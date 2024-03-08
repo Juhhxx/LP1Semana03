@@ -17,6 +17,7 @@ namespace HeroPerks
                 }
                 else if (args[i] == "a")
                 {
+                    Console.WriteLine("aaa");
                     addRole = Perks.AutoHeal;
                 }
                 else if (args[i] == "s")
@@ -64,11 +65,12 @@ namespace HeroPerks
         
             Console.WriteLine(allRoles);
 
-            if ((myRoles & (Perks.Stealth & Perks.DoubleJump)) == (Perks.Stealth & Perks.DoubleJump))
-            {
-                Console.WriteLine("Silent Jumper!");
-            }
-            if ((myRoles & Perks.AutoHeal) == Perks.AutoHeal)
+            // if ((myRoles & (Perks.Stealth & Perks.DoubleJump)) == (Perks.Stealth & Perks.DoubleJump))
+            // {
+            //     Console.WriteLine("Silent Jumper!");
+            // }
+            Console.WriteLine($"{myRoles} & {(myRoles & Perks.AutoHeal)} is {(myRoles & Perks.AutoHeal) != Perks.AutoHeal}");
+            if ((myRoles & Perks.AutoHeal) != Perks.AutoHeal)
             {
                 Console.WriteLine("Not gonna make it!");
             }
