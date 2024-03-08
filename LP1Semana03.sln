@@ -15,6 +15,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PowToUntil", "PowToUntil\Po
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FamousQuotes", "FamousQuotes\FamousQuotes.csproj", "{C2607D59-C7B5-4AC3-8E1B-11702A3B3DAE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RPS", "RPS\RPS.csproj", "{754960F1-489A-432B-8B95-27241F56E643}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -48,5 +50,9 @@ Global
 		{C2607D59-C7B5-4AC3-8E1B-11702A3B3DAE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C2607D59-C7B5-4AC3-8E1B-11702A3B3DAE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C2607D59-C7B5-4AC3-8E1B-11702A3B3DAE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{754960F1-489A-432B-8B95-27241F56E643}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{754960F1-489A-432B-8B95-27241F56E643}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{754960F1-489A-432B-8B95-27241F56E643}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{754960F1-489A-432B-8B95-27241F56E643}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
