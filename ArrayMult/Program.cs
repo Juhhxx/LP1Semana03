@@ -25,8 +25,8 @@ namespace ArrayMult
                 int v = 0;
                 foreach (float nM in matrix[m])
                 {
-                    float add = nM + vector[v];
-                    Console.WriteLine($"{nM} + {vector[v]} = {add}");
+                    float add = nM * vector[v];
+                    Console.WriteLine($"{nM} x {vector[v]} = {add}");
                     v++;
 
                 }
