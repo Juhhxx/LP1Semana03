@@ -10,13 +10,22 @@ namespace ChangeString
             string s = Console.ReadLine();
 
             Console.Write("\nInsira uma letra para ser substituída: ");
-            string c = Console.ReadLine();
+            string charc = Console.ReadLine();
+            char c = char.Parse(charc);
 
-            // string[] newStringAr = new string[s.Length];
+            Console.WriteLine("");
 
             for (int i = 0; i < s.Length; i++)
             {
-                Console.Write(s[i]);
+
+                if (s[i] == c)
+                {
+                    Console.Write("X");
+                }
+                else
+                {      
+                    Console.Write(s[i]);
+                }
             }
         }
     }
