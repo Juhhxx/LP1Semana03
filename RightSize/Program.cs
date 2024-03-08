@@ -8,7 +8,12 @@ namespace RightSize
         {
             foreach (string s in args)
             {
-                if (s.Length > 3)
+
+                if (s.Length > 6)
+                {
+                    break;
+                }
+                else if (s.Length > 3)
                 {
                     Console.WriteLine(s);
                 }
