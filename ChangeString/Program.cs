@@ -4,9 +4,11 @@ namespace ChangeString
 {
     class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
-            Console.WriteLine("Hello, World!");
+            Console.Write("Insira uma string: ");
+            string s = Console.ReadLine();
+
         }
     }
 }
