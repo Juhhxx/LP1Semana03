@@ -30,6 +30,9 @@ namespace HeroPerks
                     case 'd':
                         addRole = Perks.DoubleJump;
                         break;
+                    default:
+                        Console.Write("Unkown Perk!");
+                        return;
                 }
 
                 myRoles ^= addRole;
@@ -70,19 +73,22 @@ namespace HeroPerks
                 allRoles += Perks.DoubleJump.ToString();
             }
         
-            Console.WriteLine(allRoles);
+            if (allRoles == "")
+            {
+                allRoles = "No Perks at all!";
+            }
 
-            
+            Console.WriteLine(allRoles);
 
             if (isStealth && isDoJump)
             {
                 Console.WriteLine("Silent Jumper!");
             }
-
             if (isAutoHeal == false)
             {
                 Console.WriteLine("Not gonna make it!");
             }
+            
         }
     }
 }
