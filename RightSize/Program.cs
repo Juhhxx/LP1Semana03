@@ -8,7 +8,10 @@ namespace RightSize
         {
             foreach (string s in args)
             {
-                Console.WriteLine(s);
+                if (s.Length > 3)
+                {
+                    Console.WriteLine(s);
+                }
             }
         }
     }
