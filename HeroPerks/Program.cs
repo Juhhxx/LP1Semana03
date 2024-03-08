@@ -1,4 +1,5 @@
 ﻿using System;
+using System.ComponentModel;
 
 namespace HeroPerks
 {
@@ -6,33 +7,39 @@ namespace HeroPerks
     {
         static void Main(string[] args)
         {
+            string inputPerks = args[0];
+            
+
             Perks myRoles = 0000;
 
-            for(int i = 0; i < args.Length; i++)
+            foreach (char c in inputPerks)
             {
                 Perks addRole = 0000;
-                if (args[i] == "w")
+
+                switch (c)
                 {
-                    addRole = Perks.WatherBreathing;
-                }
-                else if (args[i] == "a")
-                {
-                    Console.WriteLine("aaa");
-                    addRole = Perks.AutoHeal;
-                }
-                else if (args[i] == "s")
-                {
-                    addRole = Perks.Stealth;
-                }
-                else if (args[i] == "d")
-                {
-                    addRole = Perks.DoubleJump;
+                    case 'w':
+                        addRole = Perks.WatherBreathing;
+                        break;
+                    case 'a':
+                        addRole = Perks.AutoHeal;
+                        break;
+                    case 's':
+                        addRole = Perks.Stealth;
+                        break;
+                    case 'd':
+                        addRole = Perks.DoubleJump;
+                        break;
                 }
 
                 myRoles ^= addRole;
             }
             
             string allRoles = "";
+
+            bool isStealth = (myRoles & Perks.Stealth) == Perks.Stealth;
+            bool isDoJump = (myRoles & Perks.DoubleJump) == Perks.DoubleJump;
+            bool isAutoHeal = (myRoles & Perks.AutoHeal) == Perks.AutoHeal;
 
             if ((myRoles & Perks.WatherBreathing) == Perks.WatherBreathing)
             { 
@@ -65,12 +72,14 @@ namespace HeroPerks
         
             Console.WriteLine(allRoles);
 
-            // if ((myRoles & (Perks.Stealth & Perks.DoubleJump)) == (Perks.Stealth & Perks.DoubleJump))
-            // {
-            //     Console.WriteLine("Silent Jumper!");
-            // }
-            Console.WriteLine($"{myRoles} & {(myRoles & Perks.AutoHeal)} is {(myRoles & Perks.AutoHeal) != Perks.AutoHeal}");
-            if ((myRoles & Perks.AutoHeal) != Perks.AutoHeal)
+            
+
+            if (isStealth && isDoJump)
+            {
+                Console.WriteLine("Silent Jumper!");
+            }
+
+            if (isAutoHeal == false)
             {
                 Console.WriteLine("Not gonna make it!");
             }
