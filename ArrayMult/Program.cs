@@ -19,6 +19,7 @@ namespace ArrayMult
             vector[1] = float.Parse(args[5]);
 
             int m = 0;
+            float[] totals = new float[2];
 
             for (int i = 0; i < 2; i++)
             {
@@ -27,7 +28,7 @@ namespace ArrayMult
                 foreach (float nM in matrix[m])
                 {
                     float mult = nM * vector[v];
-                    Console.WriteLine($"{nM} x {vector[v]} = {mult}");
+                    // Console.WriteLine($"{nM} x {vector[v]} = {mult}");
                     add[v] = mult;
                     v++;
                 }
@@ -37,9 +38,15 @@ namespace ArrayMult
                 {
                     total += n;
                 }
-                Console.WriteLine($"{add[0]} + {add[1]} = {total}");
+                // Console.WriteLine($"{add[0]} + {add[1]} = {total}");
+                totals[i] = total;
 
                 m++;
+            }
+
+            foreach (float t in totals)
+            {
+                Console.WriteLine(t);
             }
 
         }
