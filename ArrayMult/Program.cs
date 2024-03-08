@@ -22,13 +22,13 @@ namespace ArrayMult
 
             for (int i = 0; i < 2; i++)
             {
-                foreach (float nV in vector)
-                {
-                    Console.Write(nV);
-                }
+                int v = 0;
                 foreach (float nM in matrix[m])
                 {
-                    Console.Write(nM);
+                    float add = nM + vector[v];
+                    Console.WriteLine($"{nM} + {vector[v]} = {add}");
+                    v++;
+
                 }
                 m++;
             }
