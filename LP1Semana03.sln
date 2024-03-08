@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HeroPerks", "HeroPerks\Hero
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PowToUntil", "PowToUntil\PowToUntil.csproj", "{238634D0-9091-41A7-A7C8-1761061FCC07}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FamousQuotes", "FamousQuotes\FamousQuotes.csproj", "{C2607D59-C7B5-4AC3-8E1B-11702A3B3DAE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -42,5 +44,9 @@ Global
 		{238634D0-9091-41A7-A7C8-1761061FCC07}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{238634D0-9091-41A7-A7C8-1761061FCC07}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{238634D0-9091-41A7-A7C8-1761061FCC07}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C2607D59-C7B5-4AC3-8E1B-11702A3B3DAE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C2607D59-C7B5-4AC3-8E1B-11702A3B3DAE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C2607D59-C7B5-4AC3-8E1B-11702A3B3DAE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C2607D59-C7B5-4AC3-8E1B-11702A3B3DAE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
